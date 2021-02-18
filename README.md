@@ -1,6 +1,6 @@
 # Django Examples
 
-Ejemplos hechos con Django 3.1
+Ejemplos hechos con Django 3.1. [Demo](https://angelxehgs-django.herokuapp.com/)
 
 ## Instalación
 
@@ -14,7 +14,9 @@ Para instalar de manera local ejecute los siguientes comandos:
 Se requiere configurar la base de datos y un super usuario antes de iniciar el servidor:
 
 - Migrar estructura base de datos: `./manage.py migrate` (se usará SQLite por defecto)
+- Crear nueva aplicación: `./manage.py startapp [NOMBRE]`
 - Crear un super usuario: `./manage.py createsuperuser`
+- Iniciar terminal: `./manage.py shell`
 - Iniciar servidor local: `./manage.py runserver` (panel de control en [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin))
 - Ejecutar pruebas unitarias: `./manage.py test`
 
@@ -27,7 +29,7 @@ Para instalar en Heroku ejecute los siguientes comandos:
 - Configurar clave secreta: `heroku config:set SECRET_KEY="[SECRET_KEY]"`
   - Ejemplo de clave secreta: `heroku config:set HOST="BrMyuVBC1wod4VzPNC93A24ypFzHhG0VVLF8VYe6OW0"`
 - Configurar Heroku host: `heroku config:set HOST="[Heroku URL]"`
-  - Ejemplo de Host: `heroku config:set HOST="https://salty-beyond-27706.herokuapp.com/"`
+  - Ejemplo de Host: `heroku config:set HOST="https://angelxehgs-django.herokuapp.com/"`
 - Configurar production settings: `heroku config:set DJANGO_SETTINGS_MODULE=django_examples.production`
 - Hacer Git Push a Heroku: `git push heroku main`
 - Crear un super usuario: `heroku run python manage.py createsuperuser`
