@@ -13,6 +13,7 @@ Para instalar de manera local ejecute los siguientes comandos:
 
 Se requiere configurar la base de datos y un super usuario antes de iniciar el servidor:
 
+- Generar migraciones: `./manage.py makemigrations`
 - Migrar estructura base de datos: `./manage.py migrate` (se usará SQLite por defecto)
 - Crear nueva aplicación: `./manage.py startapp [NOMBRE]`
 - Crear un super usuario: `./manage.py createsuperuser`
