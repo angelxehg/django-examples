@@ -1,16 +1,114 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <title>angelxehg's Django Examples</title>
-  </head>
-  <body>
-    <h1>Hola mundo</h1>
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-  </body>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- Estilos -->
+  <style>
+    body {
+      background-color: rgb(5, 10, 5);
+    }
+
+    .bg-dark {
+      background-color: rgb(20, 25, 20) !important;
+    }
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: bold;
+    }
+
+    .full-h {
+      min-height: 100vh;
+      margin: 0 !important;
+    }
+
+    .fill-sm {
+      width: 100%;
+    }
+
+    .card {
+      border: 3px solid rgba(0, 0, 0, 0.25) !important;
+      border-radius: 0.4rem !important;
+    }
+
+    .card.heading {
+      background-color: rgba(0, 0, 0, 0) !important;
+      border-radius: 0 !important;
+      border: none !important;
+    }
+
+    @media (min-width: 400px) {
+      .fill-sm {
+        max-width: 400px;
+      }
+    }
+
+    a:link {
+      color: rgb(35, 200, 35);
+    }
+
+    a:visited {
+      color: rgb(35, 200, 35);
+    }
+
+    a:hover {
+      color: rgb(200, 35, 35);
+    }
+
+    a:active {
+      color: rgb(35, 175, 70);
+    }
+  </style>
+  <title>angelxehg's Django Examples</title>
+</head>
+
+<body>
+  <!-- Container principal-->
+  <div class="container-sm mt-3 mb-3">
+    <!-- Header -->
+    <div class="card text-white bg-dark font-monospace">
+      <div class="card-body">
+        <div class="row">
+          <!-- <div class="col-md-auto text-center">
+              <img src="https://angelxehg.com/static/profile21sqrsmall-982a154b3aabb360a5051a9f97f15a01.jpg" class="rounded-circle fluid" alt="Foto de perfil de Angel" style="max-height: 150px;" />
+            </div> -->
+          <div class="col text-center text-md-start">
+            <h1>Django Examples</h1>
+            <p>Ejemplos con Django 3.1. Ver código en <a href="https://github.com/angelxehg/django-examples/" rel="noreferrer" target="_blank">GitHub</a> </p>
+            <p>Creado por Angel Hurtado (<a href="https://angelxehg.com" rel="noreferrer" target="_blank">@angelxehg</a>)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contenido -->
+    <main>
+      <div class="card heading text-white text-center bg-dark font-monospace mt-2">
+        <div class="card-body">
+          <h4 class="mb-0">Hola mundo</h4>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
