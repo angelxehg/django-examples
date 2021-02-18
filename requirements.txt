@@ -1,1 +1,4 @@
-Django==3.1.6
+# Estos son los requerimientos de producción.
+-r config/requirements.txt
+django-heroku==0.3.1
+gunicorn==20.0.4
